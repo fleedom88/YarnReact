@@ -4,6 +4,10 @@ import Hello from './components/Hello';
 import Wrapper from './components/wrapper';
 import MessageBox from './components/MessageBox';
 import Counter from './components/Counter';
+import InputSample from './components/inputSample';
+import UseRef from './components/UseRef';
+import UserList from './components/UserList';
+
 
 function App() {
   const obj = {
@@ -31,9 +35,12 @@ function App() {
   };
   return (
     <>
-    <Wrapper>
+    <UserList></UserList>
+    <UseRef></UseRef>
+    <InputSample></InputSample>
+    <Wrapper>     
       <Counter></Counter>
-      <MessageBox folding={folding}></MessageBox>
+      <MessageBox folding={folding}></MessageBox>     
     <div>
       <br></br>
       <button onClick={foldMessage}>{folding?"접기":"펴기"}</button>
