@@ -13,6 +13,7 @@ const getText=(text)=>{
 const ShowState = ({number, text}) =>{
     const showNumber = useMemo(()=> getNumber(number), [number]);
     const showText = useMemo(()=> getText(text), [text]);
+    // 배열안의 요소 변경여부에 따라 연산된 값 대입
     return(
         <div className="info-wrapper">
             {showNumber}<br/>
