@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppUseMemo from './AppUseMemo';
+import AppUseCallback from './AppUseCallback';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <AppUseCallback/>
     <AppUseMemo/>
     <App />
   </React.StrictMode>
