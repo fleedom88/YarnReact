@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useCallback, useState} from "react";
 import Light from "./Light";
 
 const SmartHome=()=>{
@@ -6,15 +6,17 @@ const SmartHome=()=>{
     const [kitchenOn, setKitchenOn] = useState(false);
     const [bathOn, setBathOn] = useState(false);
 
-    const toggleMaster = () => {
+    const toggleMaster = useCallback(() => {
         setMasterOn(!masterOn);
-    };
-    const toggleKitchen = () => {
+    },[masterOn]);
+
+    const toggleKitchen = useCallback(() => {
         setKitchenOn(!kitchenOn);
-    };
-    const toggleBath = () => {
+    },[kitchenOn]);
+
+    const toggleBath = useCallback(() => {
         setBathOn(!bathOn);
-    };
+    },[bathOn]);
     return(
         <div>
             <Light room="침실" on={masterOn} toggle={toggleMaster}/>

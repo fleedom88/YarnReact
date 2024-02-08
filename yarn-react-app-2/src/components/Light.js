@@ -10,4 +10,4 @@ const Light=({room, on,  toggle})=>{
     );
 };
 
-export default Light;
+export default React.memo(Light);
