@@ -39,6 +39,7 @@ function App() {
     <UseRef></UseRef>
     <InputSample></InputSample>
     <Wrapper>     
+    <Counter></Counter>
       <Counter></Counter>
       <MessageBox folding={folding}></MessageBox>     
     <div>

@@ -5,10 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppUseMemo from './AppUseMemo';
 import AppUseCallback from './AppUseCallback';
+import AppCounter from './AppCounter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <AppCounter/>
     <AppUseCallback/>
     <AppUseMemo/>
     <App />
