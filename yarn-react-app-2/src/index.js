@@ -6,10 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import AppUseMemo from './AppUseMemo';
 import AppUseCallback from './AppUseCallback';
 import AppCounter from './AppCounter';
+import AppUseContext from './AppUseContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <AppUseContext/>
+    <hr/>
     <AppCounter/>
     <AppUseCallback/>
     <AppUseMemo/>
